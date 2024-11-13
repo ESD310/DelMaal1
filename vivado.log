@@ -124,3 +124,5 @@ INFO: [IP_Flow 19-3420] Updated design_1_Correlator_TOF_0_0 to use current proje
 Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
 Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
 report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 08:48:57 2024...
