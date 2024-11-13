@@ -1,0 +1,16 @@
+// This analog stimulus file is used to inject analog signals (e.g., volts, temperature) for a simulation.
+// Units are as follows:
+//          Time:                           nanoseconds [ns]
+//          Voltage (All rails):     volts [V]
+//          Temperature:             degrees C [C]. Please note that the temperature transfer function is in terms of Kelvin
+//
+// In this example the VCCAUX supply moves outside the 1.89V upper alarm limit at 67 us
+// An alarm is generate when the VCCAUX channel is sampled and converted by the ADC
+
+TIME	VAUXP[4] VAUXN[4]
+00000     0.0	0.0
+67000  	0.1	0.0
+100000  0.2	0.0
+134000   0.3	0.0
+1000000	0.5	0.0
+1500000	1.0	0.0

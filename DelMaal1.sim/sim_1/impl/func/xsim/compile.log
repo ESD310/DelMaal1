@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Correlator_TOF'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Shifter_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_single'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Correlator_TOF_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_pulse'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_gen_v1_0_4'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xpm_cdc_gen_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

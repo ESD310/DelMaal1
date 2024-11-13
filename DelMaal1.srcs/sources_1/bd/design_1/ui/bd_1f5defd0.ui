@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.731554",
+   "Default View_TopLeft":"-269,-247",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port Vaux4 -pg 1 -lvl 0 -x -40 -y 170 -defaultsOSRD
+preplace port port-id_clk_12MHz -pg 1 -lvl 0 -x -40 -y 250 -defaultsOSRD
+preplace port port-id_start -pg 1 -lvl 0 -x -40 -y -180 -defaultsOSRD
+preplace port port-id_TOF_ready -pg 1 -lvl 6 -x 1630 -y -140 -defaultsOSRD
+preplace port port-id_drdy_latch -pg 1 -lvl 6 -x 1630 -y 330 -defaultsOSRD
+preplace port port-id_drdy_Out -pg 1 -lvl 6 -x 1630 -y 360 -defaultsOSRD
+preplace port port-id_clk12MHz -pg 1 -lvl 6 -x 1630 -y 210 -defaultsOSRD
+preplace portBus TOF_out -pg 1 -lvl 6 -x 1630 -y -170 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 850 -y 130 -defaultsOSRD
+preplace inst Shifter_0 -pg 1 -lvl 3 -x 850 -y -120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 580 -y 30 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 80 -y 250 -defaultsOSRD
+preplace inst Correlator_TOF_0 -pg 1 -lvl 5 -x 1440 -y -150 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -x 1140 -y -80 -defaultsOSRD
+preplace inst xpm_cdc_gen_0 -pg 1 -lvl 4 -x 1140 -y 300 -defaultsOSRD
+preplace netloc Correlator_TOF_0_TOF_out 1 5 1 1600 -170n
+preplace netloc Correlator_TOF_0_TOF_ready 1 5 1 N -140
+preplace netloc Shifter_0_d_out 1 3 2 990 -150 N
+preplace netloc SignalLatch_0_drdy_latch 1 4 2 1280 330 N
+preplace netloc clk_12MHz_1 1 0 1 N 250
+preplace netloc clk_wiz_0_clk_out1 1 1 3 N 240 690J 280 N
+preplace netloc clk_wiz_0_clk_out2 1 1 5 170J 270 NJ 270 1040 210 1260 210 N
+preplace netloc start_1 1 0 5 NJ -180 NJ -180 NJ -180 NJ -180 1280
+preplace netloc xadc_wiz_0_do_out 1 2 1 700 -120n
+preplace netloc xadc_wiz_0_drdy_out 1 2 4 700 320 1040J 380 1260 360 N
+preplace netloc xadc_wiz_0_eoc_out 1 2 2 710 260 990
+preplace netloc xlconstant_0_dout 1 2 1 660 30n
+preplace netloc xlconstant_1_dout 1 4 1 1270 -110n
+preplace netloc Vaux4_1 1 0 3 N 170 N 170 660
+levelinfo -pg 1 -40 80 580 850 1140 1440 1630
+pagesize -pg 1 -db -bbox -sgen -160 -340 1780 410
+"
+}
+0

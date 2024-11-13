@@ -1,0 +1,1831 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Tue Nov 12 12:36:42 2024
+# Process ID: 31112
+# Current directory: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18488 C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.xpr
+# Log file: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/vivado.log
+# Journal file: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1\vivado.jou
+# Running On        :AxelsPC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-1255U
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16874 MB
+# Swap memory       :6710 MB
+# Total Virtual     :23585 MB
+# Available Virtual :7131 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1528.812 ; gain = 455.922
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:module_ref:Shifter:1.0 - Shifter_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:Correlator_TOF:1.0 - Correlator_TOF_0
+Adding component instance block -- xilinx.com:module_ref:SignalLatch:1.0 - SignalLatch_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Successfully read diagram <design_1> from block design file <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1646.758 ; gain = 74.785
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/design2.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/design3.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/SignalLatch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SignalLatch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_Shifter_0_0/sim/design_1_Shifter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Shifter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_Correlator_TOF_0_0/sim/design_1_Correlator_TOF_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Correlator_TOF_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_SignalLatch_0_0/sim/design_1_SignalLatch_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_SignalLatch_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Correlator_TOF [correlator_tof_default]
+Compiling architecture design_1_correlator_tof_0_0_arch of entity xil_defaultlib.design_1_Correlator_TOF_0_0 [design_1_correlator_tof_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.Shifter [shifter_default]
+Compiling architecture design_1_shifter_0_0_arch of entity xil_defaultlib.design_1_Shifter_0_0 [design_1_shifter_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.SignalLatch [signallatch_default]
+Compiling architecture design_1_signallatch_0_0_arch of entity xil_defaultlib.design_1_SignalLatch_0_0 [design_1_signallatch_0_0_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=62.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000010100"...]
+Compiling architecture amd of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2153.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_behav -key {Behavioral:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 2167.574 ; gain = 14.133
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+launch_runs synth_1 -jobs 6
+[Tue Nov 12 12:39:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 3 ms
+Stopped at time : 83 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 875069 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 1705816 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 2536563 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 3367310 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 4198057 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+run all
+Stopped at time : 5028804 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {571.161} \
+  CONFIG.CLKOUT1_PHASE_ERROR {613.025} \
+  CONFIG.CLKOUT2_JITTER {861.078} \
+  CONFIG.CLKOUT2_PHASE_ERROR {613.025} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12.000} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {50.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {50} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+delete_bd_objs [get_bd_nets clk_12MHz_1]
+connect_bd_net [get_bd_ports clk_12MHz] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins SignalLatch_0/clk_12M]
+connect_bd_net [get_bd_pins Correlator_TOF_0/clk] [get_bd_pins clk_wiz_0/clk_out2]
+save_bd_design
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_Correlator_TOF_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_Correlator_TOF_0_0 to use current project options
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Correlator_TOF_0 .
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Nov 12 12:45:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Processen kan ikke få adgang til filen, da den bruges af en anden proces: "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Processen kan ikke få adgang til filen, da den bruges af en anden proces: "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/simulate.log"
+launch_runs impl_1 -jobs 6
+[Tue Nov 12 12:47:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 3235.699 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 3235.699 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.920 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3235.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3235.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 3235.699 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/design2.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim/design3.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Correlator_TOF [correlator_tof_default]
+Compiling architecture design_1_correlator_tof_0_0_arch of entity xil_defaultlib.design_1_Correlator_TOF_0_0 [design_1_correlator_tof_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.Shifter [shifter_default]
+Compiling architecture design_1_shifter_0_0_arch of entity xil_defaultlib.design_1_Shifter_0_0 [design_1_shifter_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.SignalLatch [signallatch_default]
+Compiling architecture design_1_signallatch_0_0_arch of entity xil_defaultlib.design_1_SignalLatch_0_0 [design_1_signallatch_0_0_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=62.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000010100"...]
+Compiling architecture amd of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3758.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_behav -key {Behavioral:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3758.410 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Nov 12 12:51:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.2
+  **** Build date : Sep  5 2024 at 15:53:37
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Sep 05 2024-07:02:39
+    **** Build number : 2024.1.1725512559
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3758.410 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328B78AC9A
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.141 . Memory (MB): peak = 3758.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3585 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clkOut'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clkOut'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk100M'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk100M'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3758.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3758.410 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 3 ms
+Stopped at time : 83 ns : File "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd" Line 151
+remove_bps -file {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd} -line 151
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_port -dir O clk12MHz
+connect_bd_net [get_bd_ports clk12MHz] [get_bd_pins clk_wiz_0/clk_out2]
+save_bd_design
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+launch_runs synth_1 -jobs 6
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+[Tue Nov 12 13:07:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 3772.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3585 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+Finished Parsing XDC File [c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clkOut'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clkOut'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk100M'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk100M'. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/constrs_1/new/Const1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3775.262 ; gain = 2.344
+place_ports clk12MHz N2
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk12MHz]]
+save_constraints
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -jobs 6
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.114 . Memory (MB): peak = 3775.262 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Tue Nov 12 13:10:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Nov 12 13:13:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design impl_1
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation  -mode post-implementation -type functional
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/2024.1/tps/boost_1_72_0'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.713 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.941 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.942 . Memory (MB): peak = 3775.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design2.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design3.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Correlator_TOF'
+INFO: [VRFC 10-3107] analyzing entity 'SignalLatch'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Shifter_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Correlator_TOF_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_SignalLatch_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.glbl
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000010000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000100000100000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100010000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111001100110000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000101010100111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000111011111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000100...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110101110101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000011001111001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110101010001001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011001011010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110000001000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011011001100")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000101010001101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11000011001111000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001011010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011000111100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101000010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010100010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11000110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110100111000000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100100001000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111000101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111010111100001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100101101010011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001000011110110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000100010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101010100101011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111011110000111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110001111101110000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110101010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101111110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010011001101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000111110001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100110011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001011111101000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001100110010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11001010110000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001011001101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001101001010110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000100")(0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010110111010010")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001110011100010111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111011100001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01110001100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101101")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000010001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001011010010110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010011001101100011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011011001101100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111000111100001...]
+Compiling architecture structure of entity xil_defaultlib.Correlator_TOF [correlator_tof_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_Correlator_TOF_0_0 [design_1_correlator_tof_0_0_defa...]
+Compiling architecture structure of entity xil_defaultlib.design_1_Shifter_0_0 [design_1_shifter_0_0_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(is_c_inverted='1')\]
+Compiling architecture structure of entity xil_defaultlib.SignalLatch [signallatch_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_SignalLatch_0_0 [design_1_signallatch_0_0_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=50.0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz [design_1_clk_wiz_0_0_clk_wiz_def...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0 [design_1_clk_wiz_0_0_default]
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000010100"...]
+Compiling architecture structure of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_func_impl
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:01:40 . Memory (MB): peak = 3775.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '99' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_func_impl -key {Post-Implementation:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:01:58 . Memory (MB): peak = 3775.262 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 3775.262 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 4610.191 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_SignalLatch_0_0
+Upgrading 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_SignalLatch_0_0 to use current project options
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SignalLatch_0 .
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov 12 13:25:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+[Tue Nov 12 13:25:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_SignalLatch_0_0
+Upgrading 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_SignalLatch_0_0 to use current project options
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SignalLatch_0 .
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov 12 13:32:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+[Tue Nov 12 13:32:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation  -mode post-implementation -type functional
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/2024.1/tps/boost_1_72_0'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.828 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.190 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4610.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design2.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design3.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Correlator_TOF'
+INFO: [VRFC 10-3107] analyzing entity 'SignalLatch'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Shifter_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Correlator_TOF_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_SignalLatch_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.glbl
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000010000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000100000100000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100010000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111001100110000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000101010100111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000111011111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000100...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110101110101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000011001111001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110101010001001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011001011010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110000001000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011011001100")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000101010001101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11000011001111000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001011010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011000111100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101000010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010100010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11000110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110100111000000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100100001000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111000101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111010111100001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100101101010011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001000011110110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000100010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101010100101011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111011110000111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110001111101110000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110101010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101111110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010011001101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000111110001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100110011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001011111101000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001100110010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11001010110000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001011001101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001101001010110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000100")(0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010110111010010")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001110011100010111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111011100001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01110001100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101101")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000010001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001011010010110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010011001101100011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011011001101100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111000111100001...]
+Compiling architecture structure of entity xil_defaultlib.Correlator_TOF [correlator_tof_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_Correlator_TOF_0_0 [design_1_correlator_tof_0_0_defa...]
+Compiling architecture structure of entity xil_defaultlib.design_1_Shifter_0_0 [design_1_shifter_0_0_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(is_c_inverted='1')\]
+Compiling architecture structure of entity xil_defaultlib.SignalLatch [signallatch_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_SignalLatch_0_0 [design_1_signallatch_0_0_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=50.0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz [design_1_clk_wiz_0_0_clk_wiz_def...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0 [design_1_clk_wiz_0_0_default]
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000010100"...]
+Compiling architecture structure of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_func_impl
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:01:46 . Memory (MB): peak = 4610.191 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '106' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_func_impl -key {Post-Implementation:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+WARNING: Simulation object /design_1_wrapper/design_1_i/SignalLatch_0/U0/temp_reg was not found in the design.
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:02:07 . Memory (MB): peak = 4610.191 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 4610.191 ; gain = 0.000
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_cells SignalLatch_0]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xpm_cdc_gen:1.0 xpm_cdc_gen_0
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+endgroup
+set_property location {4 1160 303} [get_bd_cells xpm_cdc_gen_0]
+xpm_cdc_array_single  *****  1
+xpm_cdc_pulse  *****  1
+set_property -dict [list \
+  CONFIG.CDC_TYPE {xpm_cdc_pulse} \
+  CONFIG.INIT_SYNC_FF {true} \
+  CONFIG.RST_USED {false} \
+  CONFIG.WIDTH {1} \
+] [get_bd_cells xpm_cdc_gen_0]
+xpm_cdc_pulse  *****  2
+xpm_cdc_pulse  *****  1
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/src_clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/dest_clk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/src_pulse] [get_bd_pins xadc_wiz_0/drdy_out]
+connect_bd_net [get_bd_ports drdy_latch] [get_bd_pins xpm_cdc_gen_0/dest_pulse]
+save_bd_design
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xpm_cdc_gen_0 .
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov 12 13:43:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+[Tue Nov 12 13:43:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation  -mode post-implementation -type functional
+INFO: [Vivado 12-12493] Simulation top is 'design_1_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-12490] The selected simulation model for 'design_1_xpm_cdc_gen_0_0' IP changed to 'rtl' from '', the simulation run directory will be deleted.
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Vivado/2024.1/tps/boost_1_72_0'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 4631.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'Correlator_TOF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+ERROR: [Common 17-180] Spawn failed: No error
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 4645.039 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.794 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.185 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4753.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4753.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4768.355 ; gain = 158.164
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design2.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design3.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim/design_1_wrapper_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Correlator_TOF'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Shifter_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_single'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_Correlator_TOF_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_clk_wiz_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_pulse'
+INFO: [VRFC 10-3107] analyzing entity 'xpm_cdc_gen_v1_0_4'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xpm_cdc_gen_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 4768.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_1_wrapper_func_impl xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.glbl
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000010000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000100000100000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100010000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001111001100110000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000101010100111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000111011111")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000000000000100...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110101110101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000011001111001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110101010001001110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110010000000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011001011010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110000001000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011011001100")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110100101100011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000101010001101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11000011001111000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001011010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110011000111100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101000010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010100010000000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010001000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11000110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110100111000000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011110001100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100100001000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111000101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00111100001111001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111010111100001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100101101010011001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001000011110110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111001001110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000100010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101010100101011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111011110000111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110001111101110000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010110101010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010111111010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101111110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010011001101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000111110001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100110011001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001011111101000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001100110010001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11001010110000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001011001101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10011001101001010110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000000100")(0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101100110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010110111010010")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001110011100010111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111011100001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01110001100011101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010111111010001110...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101101")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000010001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110100010001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110111010001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001011010010110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100101101001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010011001101100011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011011001101100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10000111000111100001...]
+Compiling architecture structure of entity xil_defaultlib.Correlator_TOF [correlator_tof_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_Correlator_TOF_0_0 [design_1_correlator_tof_0_0_defa...]
+Compiling architecture structure of entity xil_defaultlib.design_1_Shifter_0_0 [design_1_shifter_0_0_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=50.0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz [design_1_clk_wiz_0_0_clk_wiz_def...]
+Compiling architecture structure of entity xil_defaultlib.design_1_clk_wiz_0_0 [design_1_clk_wiz_0_0_default]
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000010100"...]
+Compiling architecture structure of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10110100")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.xpm_cdc_single [xpm_cdc_single_default]
+Compiling architecture structure of entity xil_defaultlib.xpm_cdc_pulse [xpm_cdc_pulse_default]
+Compiling architecture structure of entity xil_defaultlib.xpm_cdc_gen_v1_0_4 [xpm_cdc_gen_v1_0_4_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_xpm_cdc_gen_0_0 [design_1_xpm_cdc_gen_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_func_impl
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:01:41 . Memory (MB): peak = 4768.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '101' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_func_impl -key {Post-Implementation:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+WARNING: Simulation object /design_1_wrapper/design_1_i/SignalLatch_0/drdy_latch was not found in the design.
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4768.355 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:02:05 . Memory (MB): peak = 4768.355 ; gain = 158.164
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 4926.754 ; gain = 28.074
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 4926.754 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Nov 12 13:51:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+run 1 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 4926.754 ; gain = 0.000
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property CONFIG.CONST_VAL {7200} [get_bd_cells xlconstant_1]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+Exporting to file c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov 12 14:02:06 2024] Launched synth_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/synth_1/runme.log
+[Tue Nov 12 14:02:06 2024] Launched impl_1...
+Run output will be captured here: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\Correlator_TOF.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.srcs\sources_1\new\SignalLatch.vhd:]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210328B78AC9A
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 87568 KB (Peak: 87568 KB), Simulation CPU Usage: 17577 ms
+INFO: [Simtcl 6-16] Simulation closed
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 08:08:17 2024...

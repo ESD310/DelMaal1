@@ -1,0 +1,245 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Tue Nov 12 12:36:42 2024
+# Process ID: 31112
+# Current directory: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18488 C:\Users\axelo\OneDrive\Skrivebord\DelMaal1\DelMaal1.xpr
+# Log file: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/vivado.log
+# Journal file: C:/Users/axelo/OneDrive/Skrivebord/DelMaal1\vivado.jou
+# Running On        :AxelsPC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-1255U
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16874 MB
+# Swap memory       :6710 MB
+# Total Virtual     :23585 MB
+# Available Virtual :7131 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+launch_simulation
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+restart
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 3 ms
+run all
+run all
+run all
+run all
+run all
+run all
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {571.161} \
+  CONFIG.CLKOUT1_PHASE_ERROR {613.025} \
+  CONFIG.CLKOUT2_JITTER {861.078} \
+  CONFIG.CLKOUT2_PHASE_ERROR {613.025} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12.000} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {50.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {50} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+delete_bd_objs [get_bd_nets clk_12MHz_1]
+connect_bd_net [get_bd_ports clk_12MHz] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins SignalLatch_0/clk_12M]
+connect_bd_net [get_bd_pins Correlator_TOF_0/clk] [get_bd_pins clk_wiz_0/clk_out2]
+save_bd_design
+update_module_reference design_1_Correlator_TOF_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_simulation
+launch_simulation
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 3 ms
+remove_bps -file {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/new/Correlator_TOF.vhd} -line 151
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_port -dir O clk12MHz
+connect_bd_net [get_bd_ports clk12MHz] [get_bd_pins clk_wiz_0/clk_out2]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+place_ports clk12MHz N2
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk12MHz]]
+save_constraints
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type functional
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+run 1 ms
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_SignalLatch_0_0
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_SignalLatch_0_0
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+close_design
+launch_simulation -mode post-implementation -type functional
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_cells SignalLatch_0]
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xpm_cdc_gen:1.0 xpm_cdc_gen_0
+endgroup
+set_property location {4 1160 303} [get_bd_cells xpm_cdc_gen_0]
+set_property -dict [list \
+  CONFIG.CDC_TYPE {xpm_cdc_pulse} \
+  CONFIG.INIT_SYNC_FF {true} \
+  CONFIG.RST_USED {false} \
+  CONFIG.WIDTH {1} \
+] [get_bd_cells xpm_cdc_gen_0]
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/src_clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/dest_clk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins xpm_cdc_gen_0/src_pulse] [get_bd_pins xadc_wiz_0/drdy_out]
+connect_bd_net [get_bd_ports drdy_latch] [get_bd_pins xpm_cdc_gen_0/dest_pulse]
+save_bd_design
+make_wrapper -files [get_files C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+close_design
+launch_simulation -mode post-implementation -type functional
+open_wave_config C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+restart
+add_force {/design_1_wrapper/clk_12MHz} -radix hex {1 0ns} {0 41500ps} -repeat_every 83000ps
+add_force {/design_1_wrapper/start} -radix hex {1 0ns}
+run 1 ms
+restart
+run 1 ms
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run 1 ms
+open_bd_design {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property CONFIG.CONST_VAL {7200} [get_bd_cells xlconstant_1]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/DelMaal1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
+save_wave_config {C:/Users/axelo/OneDrive/Skrivebord/DelMaal1/design_1_wrapper_behav.wcfg}
+close_sim
